@@ -3,10 +3,10 @@
     "version": "0.1.0",
     "description": "A simple starter angular project",
     "scripts": {
-        "build": "webpack --config ./config/webpack/development.js --inline --colors --progress --display-error-details --display-cached",
-        "watch": "npm run build -- --watch",
-        "dev-server": "webpack-dev-server --config ./config/webpack/development.js --colors --progress --port 8080 --host 0.0.0.0 --content-base public",
-        "start": "npm run dev-server --silent"
+        "build": "bash ./scripts/build.sh",
+        "watch": "bash ./scripts/watch.sh",
+        "dev-server": "bash ./scripts/dev-server.sh",
+        "start": "bash ./scripts/start.sh"
     },
     "contributors": [
         "Rob Wormald <robwormald@gmail.com>",
