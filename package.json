@@ -3,6 +3,7 @@
     "version": "0.1.0",
     "description": "A simple starter angular project",
     "scripts": {
+        "lint": "bash ./scripts/lint.sh",
         "build": "bash ./scripts/build.sh",
         "watch": "bash ./scripts/watch.sh",
         "dev-server": "bash ./scripts/dev-server.sh",
@@ -19,6 +20,7 @@
     ],
     "license": "MIT",
     "devDependencies": {
+        "tslint": "^4.5.1",
         "webpack-dev-server": "^2.4.2"
     },
     "dependencies": {

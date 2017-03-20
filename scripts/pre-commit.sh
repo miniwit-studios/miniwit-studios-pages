@@ -5,9 +5,8 @@ git stash -k -u -q
 (
     set -e
     
-    echo In pre-commit hook!
     #yarn test-once
-    #yarn lint
+    npm run lint
 )
 
 __RET=$?
