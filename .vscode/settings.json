@@ -1,3 +1,9 @@
 {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.renderWhitespace": "all",
+    "editor.trimAutoWhitespace": false,
+    "files.insertFinalNewline": true,
+    "tslint.enable": true,
     "vsicons.presets.angular": true
 }
