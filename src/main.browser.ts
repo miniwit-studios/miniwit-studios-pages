@@ -1,12 +1,13 @@
 import './polyfills.browser';
 
+import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { AppModule } from './app/app.module';
 
 export const platformRef = platformBrowserDynamic();
 
 export function main() {
-    console.log(`Launching server in ${CONFIG.env.NODE_ENV} mode`);
+    if (CONFIG.env.NODE_ENV === 'production') enableProdMode();
     platformRef.bootstrapModule(AppModule)
         .catch(err => {
             console.error(err);
