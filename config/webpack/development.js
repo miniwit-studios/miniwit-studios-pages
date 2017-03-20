@@ -1,7 +1,8 @@
-let webpack = require('webpack');
+let { ContextReplacementPlugin, DefinePlugin } = require('webpack');
 let path = require('path');
 let webpackMerge = require('webpack-merge');
 let commonConfig = require('./common');
+let clientConfig = require('./client-config');
 
 let devConfig = {
     entry: {
@@ -13,8 +14,8 @@ let devConfig = {
     },
     
     plugins: [
-        new webpack.ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)@angular/, path.resolve(__dirname, '../src')),
-        // new webpack.optimize.CommonsChunkPlugin({ name: ['main', 'vendor', 'polyfills', 'head'], minChunks: Infinity })
+        new ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)@angular/, path.resolve(__dirname, '../src')),
+        new DefinePlugin(clientConfig)
     ],
     
     module: {
