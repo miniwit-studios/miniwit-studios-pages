@@ -1,3 +1,14 @@
 /node_modules/
 /dist/
+/www/
 /npm-debug.log
+
+/config/**/local.js
+/config/**/local-*.js
+
+.yarnclean
+yarn-error.log
+
+.suo
+/bin/
+/obj/
