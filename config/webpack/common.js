@@ -13,7 +13,7 @@ var defaultConfig = {
     
     resolve: {
         modules: [
-            path.join(__dirname, '../../src'),
+            path.join(__dirname, '../..'),
             path.join(__dirname, '../../node_modules'),
             path.join(__dirname, '../../public/assets'),
             path.join(__dirname, '../../src/modules')
