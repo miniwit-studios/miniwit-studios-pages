@@ -4,7 +4,7 @@ import {GithubService} from '../shared/github.service';
 
 @Component({
   selector: 'repo-detail',
-  styleUrls: ['./repo-detail.component.css'],
+  styleUrls: ['./repo-detail.component.scss'],
   templateUrl: './repo-detail.component.html'
 })
 export class RepoDetailComponent implements OnInit {

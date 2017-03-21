@@ -2,7 +2,7 @@ import {Component} from '@angular/core';
 
 @Component({
   selector: 'about',
-  styleUrls: ['./about.component.css'],
+  styleUrls: ['./about.component.scss'],
   templateUrl: './about.component.html'
 })
 export class AboutComponent {
