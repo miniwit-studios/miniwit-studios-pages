@@ -2,7 +2,7 @@ import './polyfills.browser';
 
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-import { AppModule } from './app/app.module';
+import { AppModule } from './modules/app.module';
 
 export const platformRef = platformBrowserDynamic();
 
