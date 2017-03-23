@@ -15,7 +15,7 @@
             <textarea formControlName="content" class="sd-form-control" placeholder="Content here."></textarea>
         </label>
         <div class="form-submit">
-            <button type="submit">Submit</button>
+            <button type="submit" [disabled]="contactForm.invalid">Submit</button>
         </div>
     </div>
 </form>
