@@ -1,4 +1,3 @@
 
 
-export * from './pluralize';
-export * from './search-results';
+export * from 'miter-shared-module';

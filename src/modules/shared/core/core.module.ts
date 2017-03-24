@@ -1,19 +1,18 @@
 import { NgModule, ModuleWithProviders } from '@angular/core';
 
 //Imports
-import { RouterModule } from '@angular/router';
-import { CommonModule } from '@angular/common';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MiterSharedModule, exported_modules as msm_exported_modules } from 'miter-shared-module';
 
 export const module_exports = [];
 
-export const imported_modules = [RouterModule, CommonModule, FormsModule, ReactiveFormsModule, HttpModule];
+const imported_modules = [MiterSharedModule, ReactiveFormsModule];
+export const exported_modules = [...imported_modules, ...msm_exported_modules];
 
 @NgModule({
     declarations: [...module_exports],
     imports     : [...imported_modules],
-    exports     : [...module_exports, ...imported_modules]
+    exports     : [...module_exports, ...exported_modules]
 })
 export class CoreModule {
     static forRoot(): ModuleWithProviders {
