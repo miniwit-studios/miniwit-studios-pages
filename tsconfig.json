@@ -23,7 +23,9 @@
         },
         "types": [
             "core-js",
-            "node"
+            "lodash.clonedeep",
+            "node",
+            "pluralize"
         ]
     },
     "exclude": [
