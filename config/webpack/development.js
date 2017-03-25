@@ -46,7 +46,7 @@ let devConfig = {
     },
     
     output: {
-        path: path.resolve(__dirname, '../../www'),
+        path: path.resolve(__dirname, '../../www')
     },
     
     plugins: [
@@ -56,7 +56,7 @@ let devConfig = {
     
     module: {
         loaders: [
-            { test: /\.ts$/, loaders: [$awesomeTypescript, $angular2Template, $angularRouter] },
+            { test: /\.ts$/, loaders: [$awesomeTypescript, $angular2Template, $angularRouter], exclude: /\.spec\.ts$/ },
             { test: /\.css$/, loaders: [$toString, $css] },
             { test: /\.html$/, loaders: [$trim] },
             { test: /\.scss$/, loaders: [$style, $trim, $sass], exclude: /modules\/./ },

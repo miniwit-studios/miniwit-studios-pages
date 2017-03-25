@@ -8,6 +8,8 @@
         "watch": "bash ./scripts/watch.sh",
         "dev-server": "bash ./scripts/dev-server.sh",
         "start": "bash ./scripts/start.sh",
+        "test": "bash ./scripts/test.sh",
+        "test-once": "bash ./scripts/test.sh once",
         "pre-commit": "bash ./scripts/pre-commit.sh"
     },
     "pre-commit": [
@@ -20,9 +22,20 @@
     ],
     "license": "MIT",
     "devDependencies": {
+        "@types/jasmine": "^2.5.46",
+        "jasmine-core": "^2.5.2",
+        "karma": "^1.5.0",
+        "karma-cli": "^1.0.1",
+        "karma-defer-spec-reporter": "^0.0.30",
+        "karma-jasmine": "^1.1.0",
+        "karma-phantomjs-launcher": "^1.0.4",
+        "karma-super-dots-reporter": "^0.1.0",
+        "karma-webpack": "^2.0.3",
+        "phantomjs-prebuilt": "^2.1.14",
         "pre-commit": "^1.2.2",
         "tslint": "^4.5.1",
-        "webpack-dev-server": "^2.4.2"
+        "webpack-dev-server": "^2.4.2",
+        "yargs": "^7.0.2"
     },
     "dependencies": {
         "@angular/animations": "4.0.0",
@@ -60,7 +73,7 @@
         "to-string-loader": "^1.1.4",
         "trim-loader": "^0.5.1",
         "typescript": "^2.2.1",
-        "webpack": "^2.2.1",
+        "webpack": "^2.3.2",
         "webpack-merge": "^0.15.0",
         "zone.js": "^0.8.4"
     },
