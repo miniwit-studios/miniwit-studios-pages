@@ -11,4 +11,6 @@ export class AppComponent extends ComponentBase {
     constructor() {
         super();
     }
+    
+    currentYear: number = new Date().getFullYear();
 }

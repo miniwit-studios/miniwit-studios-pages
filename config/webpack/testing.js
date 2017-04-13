@@ -2,11 +2,16 @@ let { ContextReplacementPlugin, DefinePlugin } = require('webpack');
 var path = require('path');
 var webpackMerge = require('webpack-merge');
 var commonConfig = require('./common');
+
+process.env.NODE_ENV = 'testing';
 let clientConfig = require('./client-config');
 
 //Loaders
 let $awesomeTypescript = {
-    loader: 'awesome-typescript-loader'
+    loader: 'awesome-typescript-loader',
+    options: {
+        silent: true
+    }
 };
 let $angular2Template = {
     loader: 'angular2-template-loader'
@@ -19,8 +24,6 @@ let $angularRouter = {
 };
 
 var karmaConfig = {
-    // entry: { },
-    
     output: {
         path: path.resolve(__dirname, '../../www')
     },

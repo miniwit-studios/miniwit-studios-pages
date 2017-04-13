@@ -75,7 +75,7 @@
         "typescript": "^2.2.1",
         "webpack": "^2.3.2",
         "webpack-merge": "^0.15.0",
-        "zone.js": "^0.8.4"
+        "zone.js": "^0.8.5"
     },
     "keywords": [
         "angular-seed"
