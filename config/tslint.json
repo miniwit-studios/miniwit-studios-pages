@@ -1,7 +1,7 @@
 {
     "rules": {
         "adjacent-overload-signatures": true,
-        "no-magic-numbers": [true, -1, 0, 1, 2, 10],
+        "no-magic-numbers": [false],
         "no-var-requires": true,
         
         "no-console": [true],
@@ -13,7 +13,7 @@
         "no-unused-expression": true,
         // "no-unused-parameters": true,
         // "no-unused-locals": true,
-        "no-unused-new": true,
+        // "no-unused-new": true,
         "no-switch-case-fall-through": true
     }
 }
