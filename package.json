@@ -33,7 +33,7 @@
         "karma-webpack": "^2.0.3",
         "phantomjs-prebuilt": "^2.1.14",
         "pre-commit": "^1.2.2",
-        "tslint": "^4.5.1",
+        "tslint": "^5.1.0",
         "webpack-dev-server": "^2.4.2",
         "yargs": "^7.0.2"
     },
@@ -72,7 +72,7 @@
         "style-loader": "^0.15.0",
         "to-string-loader": "^1.1.4",
         "trim-loader": "^0.5.1",
-        "typescript": "^2.2.1",
+        "typescript": "rc",
         "webpack": "^2.3.2",
         "webpack-merge": "^0.15.0",
         "zone.js": "^0.8.5"

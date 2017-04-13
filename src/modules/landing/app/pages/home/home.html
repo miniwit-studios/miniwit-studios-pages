@@ -1,4 +1,10 @@
 <h3>Home Component</h3>
 <p>Welcome to Angular Seed</p>
 
-<span class="hot">SCSS Support!</span>
+<button (click)="startAsyncTask()" [disabled]="runningAsyncTask">
+    <template [ngIf]="runningAsyncTask" [ngIfElse]="notRunning">Working...</template>
+    <template #notRunning>Do Async Task</template>
+</button><br/>
+<p *ngIf="!runningAsyncTask">{{asyncTaskResult}}</p>
+
+<p class="hot">SCSS Support!</p>
