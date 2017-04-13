@@ -2,8 +2,8 @@
 <p>Welcome to Angular Seed</p>
 
 <button (click)="startAsyncTask()" [disabled]="runningAsyncTask">
-    <template [ngIf]="runningAsyncTask" [ngIfElse]="notRunning">Working...</template>
-    <template #notRunning>Do Async Task</template>
+    <ng-template [ngIf]="runningAsyncTask" [ngIfElse]="notRunning">Working...</ng-template>
+    <ng-template #notRunning>Do Async Task</ng-template>
 </button><br/>
 <p *ngIf="!runningAsyncTask">{{asyncTaskResult}}</p>
 
