@@ -63,6 +63,7 @@
         "css-loader": "^0.25.0",
         "ie-shim": "^0.1.0",
         "lodash.clonedeep": "^4.5.0",
+        "miter-shared-module": "0.1.5",
         "node-sass": "^4.5.0",
         "pluralize": "^4.0.0",
         "raw-loader": "^0.5.1",
