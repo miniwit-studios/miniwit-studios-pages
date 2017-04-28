@@ -19,11 +19,11 @@ if [[ $STATUS_RESPONSE =~ $NOT_STAGED_FOR_COMMIT || $STATUS_RESPONSE =~ $UNTRACK
     echo -e "${YELLOW}WARNING${NC}: You have unstaged changes. These tests might not have correct results."
 fi
 
-KARMA_CONFIG="config/karma/watch.js"
+KARMA_CONFIG="config/karma/single-run.js"
 
 TEST_COUNT=${1:-}
-if [[ $TEST_COUNT == "once" ]]; then
-    KARMA_CONFIG=config/karma/single-run.js
+if [[ $TEST_COUNT == "watch" ]]; then
+    KARMA_CONFIG="config/karma/watch.js"
 fi
 
 node_modules/.bin/karma start $KARMA_CONFIG
