@@ -59,8 +59,8 @@ let devConfig = {
             { test: /\.ts$/, loaders: [$awesomeTypescript, $angular2Template, $angularRouter], exclude: /\.spec\.ts$/ },
             { test: /\.css$/, loaders: [$toString, $css] },
             { test: /\.html$/, loaders: [$trim] },
-            { test: /\.scss$/, loaders: [$style, $trim, $sass], exclude: /modules\/./ },
-            { test: /modules\/.+\.scss$/, loaders: [$toString, $trim, $sass] }
+            { test: /\.scss$/, loaders: [$style, $trim, $sass], exclude: /(app|modules|shared)\/./ },
+            { test: /(app|modules|shared)\/.+\.scss$/, loaders: [$toString, $trim, $sass] }
         ]
     },
     
