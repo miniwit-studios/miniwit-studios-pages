@@ -2,9 +2,8 @@ import { Component } from '@angular/core';
 import { ComponentBase } from 'utils/components';
 
 @Component({
-    selector: 'app',
-    styleUrls: ['./app.scss'],
-    templateUrl: './app.html'
+    templateUrl: './app.html',
+    styleUrls: ['./app.scss']
 })
 export class AppComponent extends ComponentBase {
     constructor() {

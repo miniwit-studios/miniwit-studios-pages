@@ -4,9 +4,8 @@ import { GithubService } from 'services';
 import { ComponentBase } from 'utils/components';
 
 @Component({
-    selector: 'repo-detail',
-    styleUrls: ['./repo-detail.scss'],
-    templateUrl: './repo-detail.html'
+    templateUrl: './repo-detail.html',
+    styleUrls: ['./repo-detail.scss']
 })
 export class RepoDetailComponent extends ComponentBase implements OnInit {
     constructor(public github: GithubService, private route: ActivatedRoute) {

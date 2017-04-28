@@ -4,7 +4,6 @@ import { ValidateEmail } from 'utils/validate-email';
 import { ComponentBase } from 'utils/components';
 
 @Component({
-    selector: 'app-contact',
     templateUrl: './contact.html',
     styleUrls: ['./contact.scss']
 })

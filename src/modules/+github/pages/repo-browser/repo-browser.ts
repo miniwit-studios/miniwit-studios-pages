@@ -4,7 +4,6 @@ import { GithubService } from 'services';
 import { ComponentBase } from 'utils/components';
 
 @Component({
-    selector: 'repo-browser',
     templateUrl: './repo-browser.html',
     styleUrls: ['./repo-browser.scss']
 })

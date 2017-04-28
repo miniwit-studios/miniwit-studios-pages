@@ -4,9 +4,8 @@ import { ComponentBase } from 'utils/components';
 const DELAY_MILLIS = 1000;
 
 @Component({
-    selector: 'home',
-    styleUrls: ['./home.scss'],
-    templateUrl: './home.html'
+    templateUrl: './home.html',
+    styleUrls: ['./home.scss']
 })
 export class HomeComponent extends ComponentBase {
     constructor() {
