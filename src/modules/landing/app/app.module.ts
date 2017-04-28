@@ -8,14 +8,15 @@ import { AppComponent } from './pages/app/app';
 import { AboutComponent } from './pages/about/about';
 import { HomeComponent } from './pages/home/home';
 import { ContactComponent } from './pages/contact/contact';
+import { NotFoundComponent } from './pages/not-found/not-found';
 
 //Imports
-import { routerConfig } from './routing/router-config';
+import { routerConfig } from './router-config';
 import { ServicesModule } from 'shared/services.module';
 import { SharedModule } from 'shared/shared.module';
 import { BrowserModule } from "@angular/platform-browser";
 
-const module_exports = [AppComponent, AboutComponent, HomeComponent, ContactComponent];
+const module_exports = [AppComponent, AboutComponent, HomeComponent, ContactComponent, NotFoundComponent];
 
 @NgModule({
     declarations: [...module_exports],

@@ -6,7 +6,7 @@ import { RepoListComponent } from './pages/repo-list/repo-list';
 import { RepoDetailComponent } from './pages/repo-detail/repo-detail';
 
 //Imports
-import { routerConfig } from './routing/router-config';
+import { routerConfig } from './router-config';
 import { SharedModule } from 'shared/shared.module';
 
 const module_exports = [RepoBrowserComponent, RepoListComponent, RepoDetailComponent];
