@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { ComponentBase } from 'utils/components';
 
 @Component({
-    templateUrl: './layout.html',
-    styleUrls: ['./layout.scss']
+    selector: 'page-nav',
+    templateUrl: './page-nav.html',
+    styleUrls: ['./page-nav.scss']
 })
-export class LayoutComponent extends ComponentBase {
+export class PageNavComponent extends ComponentBase {
     constructor() {
         super();
     }
