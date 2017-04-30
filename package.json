@@ -11,6 +11,7 @@
         "test": "bash ./scripts/test.sh",
         "test-once": "bash ./scripts/test.sh once",
         "test-watch": "bash ./scripts/test.sh watch",
+        "travis": "bash ./scripts/travis.sh",
         "pre-commit": "bash ./scripts/pre-commit.sh"
     },
     "pre-commit": [
