@@ -19,7 +19,7 @@ export class RepoDetailComponent extends ComponentBase implements OnInit {
     ngOnInit() {
         super.ngOnInit();
         this.route.params.subscribe(params => {
-            this.org = this.route.snapshot.parent.params['org'];
+            this.org = this.route.snapshot.parent!.params['org'];
             this.repo = params['repo'] || '';
             
             if (this.repo) {
