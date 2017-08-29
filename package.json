@@ -12,11 +12,7 @@
         "test-once": "bash ./scripts/test.sh once",
         "test-watch": "bash ./scripts/test.sh watch",
         "travis": "bash ./scripts/travis.sh",
-        "pre-commit": "bash ./scripts/pre-commit.sh"
     },
-    "pre-commit": [
-        "pre-commit"
-    ],
     "contributors": [
         "Rob Wormald <robwormald@gmail.com>",
         "PatrickJS <github@gdi2290.com>",
@@ -34,7 +30,6 @@
         "karma-super-dots-reporter": "^0.1.0",
         "karma-webpack": "^2.0.3",
         "phantomjs-prebuilt": "^2.1.14",
-        "pre-commit": "^1.2.2",
         "tslint": "^5.1.0",
         "typescript": "2.3.0",
         "webpack-dev-server": "^2.4.2",
@@ -66,7 +61,6 @@
         "css-loader": "^0.25.0",
         "ie-shim": "^0.1.0",
         "lodash.clonedeep": "^4.5.0",
-        "miter-shared-module": "0.1.7",
         "node-sass": "^4.5.0",
         "pluralize": "^4.0.0",
         "raw-loader": "^0.5.1",
