@@ -6,3 +6,12 @@ before_script:
   - yarn build
 script:
   - yarn travis
+
+deploy:
+  - provider: script
+    script: yarn build
+    skip_cleanup: true
+  - provider: surge
+    project: ./dist
+    domain: your-site.surge.sh
+    skip_cleanup: true
