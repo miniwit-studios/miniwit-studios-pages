@@ -5,5 +5,6 @@
     "editor.trimAutoWhitespace": false,
     "files.insertFinalNewline": true,
     "tslint.enable": true,
-    "vsicons.presets.angular": true
+    "vsicons.presets.angular": true,
+    "typescript.tsdk": "node_modules\\typescript\\lib"
 }

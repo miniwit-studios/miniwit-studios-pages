@@ -50,23 +50,24 @@ let devConfig = {
     },
     
     plugins: [
-        new ContextReplacementPlugin(/angular(\\|\/)core(\\|\/)@angular/, path.resolve(__dirname, '../src')),
+        new ContextReplacementPlugin(/angular(\\|\/)core/, path.resolve(__dirname, '../../src')),
         new DefinePlugin(clientConfig)
     ],
     
     module: {
         loaders: [
             { test: /\.ts$/, loaders: [$awesomeTypescript, $angular2Template, $angularRouter], exclude: /\.spec\.ts$/ },
-            { test: /\.css$/, loaders: [$toString, $css] },
+            { test: /\.css$/, loaders: [$toString, $trim, $css] },
             { test: /\.html$/, loaders: [$trim] },
-            { test: /\.scss$/, loaders: [$style, $trim, $sass], exclude: /(app|modules|shared)\/./ },
-            { test: /(app|modules|shared)\/.+\.scss$/, loaders: [$toString, $trim, $sass] }
+            { test: /\.scss$/, loaders: [$style, $trim, $sass], exclude: /(app|modules|shared)(\/|\\)./ },
+            { test: /(app|modules|shared)(\/|\\).+\.scss$/, loaders: [$toString, $trim, $sass] }
         ]
     },
     
     devServer: {
         historyApiFallback: true,
-        watchOptions: { aggregateTimeout: 300, poll: 1000 }
+        watchOptions: { aggregateTimeout: 300, poll: 1000 },
+        disableHostCheck: true
     }
 };
 
