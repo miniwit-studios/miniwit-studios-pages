@@ -46,7 +46,7 @@ let devConfig = {
     },
     
     output: {
-        path: path.resolve(__dirname, '../../www')
+        path: path.resolve(__dirname, '../../dist')
     },
     
     plugins: [
