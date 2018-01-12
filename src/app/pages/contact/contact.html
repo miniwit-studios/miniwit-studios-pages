@@ -1,35 +1,33 @@
-<h2>Contact Reactive Form</h2>
-
-<form (ngSubmit)="submitForm()" [formGroup]="contactForm" novalidate>
-    <div class="form-content">
-        <label>
-            Name:
-            <input type="text" formControlName="name" class="sd-form-control" placeholder="Enter your name.">
-        </label>
-        <label>
-            Email:
-            <input type="email" formControlName="email" class="sd-form-control" placeholder="Enter your email.">
-        </label>
-        <label>
-            Content:
-            <textarea formControlName="content" class="sd-form-control" placeholder="Content here."></textarea>
-        </label>
-        <div class="form-submit">
-            <button type="submit" [disabled]="contactForm.invalid">Submit</button>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mt-3">Contact Reactive Form</h1>
+            
+            <form (ngSubmit)="submitForm()" [formGroup]="contactForm" novalidate>
+                <div class="form-content">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input id="name" type="text" formControlName="name" class="form-control" placeholder="Enter your name.">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input id="email" type="email" formControlName="email" class="form-control" placeholder="Enter your email.">
+                    </div>
+                    <div class="form-group">
+                        <label for="content">Content:</label>
+                        <textarea id="content" formControlName="content" class="form-control" placeholder="Content here."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Submit</button>
+                </div>
+            </form>
+            
+            <div class="form-value mt-3">
+                <p>Form value:</p>
+                <pre>{{contactForm.value | json}}</pre>
+                <p>Status: {{contactForm.status}}</p>
+                <p>Valid: {{contactForm.valid}}</p>
+                <p>Submit then open console to see full form.</p>
+            </div>
         </div>
     </div>
-</form>
-
-<div class="form-value">
-    Form value:
-    <pre>
-        {{contactForm.value | json}}
-    </pre>
-    <p>
-        Status: {{contactForm.status}}
-    </p>
-    <p>
-        Valid: {{contactForm.valid}}
-    </p>
-    <p>Submit then open console to see full form.</p>
 </div>

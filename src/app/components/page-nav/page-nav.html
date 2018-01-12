@@ -1,17 +1,22 @@
-<nav>
-    <a [routerLink]="['/']">
-        Home
-    </a>
-    |
-    <a [routerLink]="['/about']">
-        About
-    </a>
-    |
-    <a [routerLink]="['/github']">
-        Github Repos
-    </a>
-    |
-    <a [routerLink]="['/contact']">
-        Contact Us
-    </a>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" [routerLink]="['/']">Angular Seed</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['/about']">About</a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['/github']">Github</a>
+                </li>
+                <li class="nav-item" [routerLinkActive]="['active']">
+                    <a class="nav-link" [routerLink]="['/contact']">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>
