@@ -9,7 +9,7 @@ script:
 
 deploy:
   - provider: script
-    script: yarn build
+    script: NODE_ENV=production yarn build
     skip_cleanup: true
   - provider: surge
     project: ./dist
