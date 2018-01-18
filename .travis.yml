@@ -7,11 +7,11 @@ before_script:
 script:
   - yarn travis
 
-deploy:
-  - provider: script
-    script: NODE_ENV=production yarn build
-    skip_cleanup: true
-  - provider: surge
-    project: ./dist
-    domain: your-site.surge.sh
-    skip_cleanup: true
+#deploy:
+#  - provider: script
+#    script: NODE_ENV=production yarn build
+#    skip_cleanup: true
+#  - provider: surge
+#    project: ./dist
+#    domain: your-site.surge.sh
+#    skip_cleanup: true
