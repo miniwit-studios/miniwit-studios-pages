@@ -1,3 +1,3 @@
 
 
-export * from './validate-email';
+export {};
