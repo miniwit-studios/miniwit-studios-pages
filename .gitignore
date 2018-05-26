@@ -2,6 +2,9 @@
 
 /node_modules/
 /dist/
+/docs/*.map
+/docs/**/*.map
+/docs/**/.gitkeep
 /www/
 /npm-debug.log
 

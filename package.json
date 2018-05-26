@@ -13,7 +13,8 @@
         "test": "bash ./scripts/test.sh",
         "test-once": "bash ./scripts/test.sh once",
         "test-watch": "bash ./scripts/test.sh watch",
-        "travis": "bash ./scripts/travis.sh"
+        "travis": "bash ./scripts/travis.sh",
+        "build-docs": "yarn build && rimraf docs && cpr dist docs"
     },
     "author": {
         "name": "Brandon Slade",
