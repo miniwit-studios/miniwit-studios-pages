@@ -1,19 +1,8 @@
 <div class="container">
     <div class="row">
         <div class="col-12">
-            <h1 class="mt-3">Home Component</h1>
-            <p>Welcome to Angular Seed</p>
-            
-            <div class="form">
-                <button class="btn btn-primary" (click)="startAsyncTask()" [disabled]="runningAsyncTask">
-                    <ng-template [ngIf]="runningAsyncTask" [ngIfElse]="notRunning">Working...</ng-template>
-                    <ng-template #notRunning>Do Async Task</ng-template>
-                </button>
-                
-                <p [class.running]="runningAsyncTask">{{asyncTaskResult}}</p>
-            </div>
-            
-            <p class="hot">SCSS Support!</p>
+            <h1 class="mt-3">Miniwit Studios</h1>
+            <p class="lead">We make games.</p>
         </div>
     </div>
 </div>

@@ -1,7 +1,7 @@
 {
-    "name": "angular-seed",
+    "name": "miniwit-studios-pages",
     "version": "0.0.0",
-    "description": "A simple starter angular project",
+    "description": "Angular frontend for the site \"https://www.miniwitstudios.com\"",
     "scripts": {
         "lint": "bash ./scripts/lint.sh",
         "build": "yarn copy-assets && bash ./scripts/build.sh",
@@ -78,14 +78,16 @@
         "zone.js": "^0.8.20"
     },
     "keywords": [
-        "angular-seed"
+        "angular",
+        "miniwit-studios",
+        "games"
     ],
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/aboveyou00/angular-seed.git"
+        "url": "git+https://github.com/miniwit-studios/miniwit-studios-pages.git"
     },
     "bugs": {
-        "url": "https://github.com/aboveyou00/angular-seed/issues"
+        "url": "https://github.com/miniwit-studios/miniwit-studios-pages/issues"
     },
-    "homepage": "https://github.com/aboveyou00/angular-seed#readme"
+    "homepage": "https://github.com/miniwit-studios/miniwit-studios-pages#readme"
 }
