@@ -55,7 +55,7 @@ let devConfig = {
     ],
     
     module: {
-        loaders: [
+        rules: [
             { test: /\.ts$/, loaders: [$awesomeTypescript, $angular2Template, $angularRouter], exclude: /\.spec\.ts$/ },
             { test: /\.css$/, loaders: [$toString, $trim, $css] },
             { test: /\.html$/, loaders: [$trim] },

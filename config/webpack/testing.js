@@ -34,7 +34,7 @@ var karmaConfig = {
     ],
     
     module: {
-        loaders: [
+        rules: [
             // .ts files for TypeScript
             { test: /\.ts$/, loaders: [$awesomeTypescript, $angular2Template, $angularRouter] }
         ]
