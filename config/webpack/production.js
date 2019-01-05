@@ -1,5 +1,4 @@
 let { ContextReplacementPlugin, DefinePlugin } = require('webpack');
-const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 let path = require('path');
 let webpackMerge = require('webpack-merge');
 let commonConfig = require('./common');
